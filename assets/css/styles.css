@@ -1,0 +1,48 @@
+body {
+    background-color: #F8EDE3;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    background-color: #798777;
+    height: 100px;
+    position: fixed;
+    width: 100%;
+    align-items: center;
+    
+}
+
+header h1 {
+    color: #A2B29F;
+    padding-left: 30px;
+}
+
+nav {
+    position: fixed;
+    justify-content: end;
+    width: 100%;
+}
+
+nav ul {
+    position: relative;
+    text-align: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-flex;
+    position: relative;
+    padding: 15px;
+    font-size: large;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #A2B29F;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
