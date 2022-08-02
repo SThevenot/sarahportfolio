@@ -13,6 +13,8 @@ body {
   flex-wrap: wrap;
 }
 
+/* navbar */
+
 header {
   display: flex;
   background-color: #798777;
@@ -56,6 +58,8 @@ nav ul li a:hover {
   text-decoration: underline;
 }
 
+/* about me section */
+
 #about-me {
   padding: 250px 100px 100px 250px;
   align-items: center;
@@ -84,6 +88,8 @@ nav ul li a:hover {
   color: #798777;
 }
 
+/* education section */
+
 #education {
   padding: 50px;
   color: #f8ede3;
@@ -94,15 +100,32 @@ nav ul li a:hover {
   padding-left: 12px;
 }
 
+/* my projects */
+
+#my-work {
+  margin-bottom: 40px;
+}
+
 #my-work h1 {
   padding: 20px 0 50px 50px;
   color: #798777;
 }
 
-#my-work img {
+/* project images */
+
+.project1 img {
+  width: 600px;
+  border: 2px solid #a2b29f;
+}
+
+.project2 img,
+.project3 img,
+.project4 img {
   width: 400px;
   border: 2px solid #a2b29f;
 }
+
+/* divs */
 
 #my-work div {
   padding: 0 400px;
@@ -111,25 +134,33 @@ nav ul li a:hover {
   flex-direction: column;
 }
 
-#my-work p {
-  color: #798777;
-  font-size: large;
-}
-
-.project1 img {
-  float: left;
-  border: 2px solid #a2b29f;
-}
-
-.project1 p {
-  text-align: left;
-  padding-left: 50px;
+.project1 div {
+  padding: 0 400px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
 }
 
 .project2,
 .project4 {
   display: flex;
   align-items: flex-end;
+}
+
+.project2 {
+  margin-top: 100px;
+}
+
+/* p elements */
+
+#my-work p {
+  color: #798777;
+  font-size: large;
+}
+
+.project1 p {
+  text-align: left;
+  padding-left: 50px;
 }
 
 .project2 p,
@@ -143,7 +174,55 @@ nav ul li a:hover {
   padding-left: 50px;
 }
 
+/* form */
+
+input[type=text], select {
+  width: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+.form-section {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+form {
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 10px 600px;
+}
+
+label {
+  padding: 15px 0;
+}
+
+#fname,
+#lname{
+  width: 150px;
+}
+
+
+/* footer */
+
 footer div {
   background-color: #798777;
   height: 100px;
+  text-align: center;
 }
+
+button {
+  background-color: #798777;
+  border: none;
+  color: white;
+  margin: 30px 70px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/* media query */
