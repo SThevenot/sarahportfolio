@@ -111,7 +111,7 @@ nav ul li a:hover {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: center;
+  align-items: center;
   width: 100%;
 }
 
@@ -136,28 +136,13 @@ nav ul li a:hover {
 
 /* divs */
 
-#my-work div {
-  padding: 0 400px;
-  height: 250px;
-  display: flex;
-  flex-direction: column;
-}
-
-.project1 div {
-  padding: 0 400px;
-  height: 250px;
-  display: flex;
-  flex-direction: column;
+.project1 {
+ margin-left: -400px;
 }
 
 .project2,
 .project4 {
-  display: flex;
-  align-items: flex-end;
-}
-
-.project2 {
-  margin-top: 100px;
+  margin-right: -400px;
 }
 
 /* p elements */
@@ -165,22 +150,9 @@ nav ul li a:hover {
 #my-work p {
   color: #798777;
   font-size: large;
-}
-
-.project1 p {
-  text-align: left;
-  padding-left: 50px;
-}
-
-.project2 p,
-.project4 p {
-  text-align: right;
-  padding-right: 150px;
-}
-
-.project3 p {
-  text-align: left;
-  padding-left: 50px;
+  text-align: center;
+  padding: 10px;
+  margin: 0;
 }
 
 /* form */
@@ -272,9 +244,12 @@ button {
     display: inline;
   }
   #my-work div p {
-    display: inline;
+    
     text-align: center;
     padding: 0;
     margin: 0;
+  }
+  #my-work img {
+    width: 400px;
   }
 }
