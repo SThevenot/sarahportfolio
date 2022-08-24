@@ -8,7 +8,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sarah's Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
     <script
       src="https://kit.fontawesome.com/ef232dddea.js"
       crossorigin="anonymous"
@@ -17,7 +22,7 @@
   </head>
   <body>
     <header>
-      <h1>Sarah Thevenot</h1>
+      <h1 id="title"><a href="#">Sarah Thevenot</a></h1>
       <nav>
         <ul>
           <li><a href="#about-me">About Me</a></li>
@@ -28,24 +33,31 @@
       </nav>
     </header>
     <main>
-      <section id="about-me">
-        <h1 class="about-h1">About Me</h1>
-        <img
-          src="./assets/images/sarah.jpeg"
-          alt="a picture of me"
-          class="sarah-img"
-        />
-        <div class="info-div">
-          <p>
-            My name is Sarah Thevenot and I am currently enrolled in University
-            of Denver's Coding Bootcamp. I graduated high school in 2020 and am
-            recently unemployed trying to pursue my education and start a career
-            as a web developer. I really enjoy building and designing websites
-            and can't wait to keep learning and growing throughout this course.
-            I previously was an employee at Jersey Mike's subs and worked my way
-            up to assistant manager before I turned 19. I look forward to
-            starting my career and making the most of my life!
-          </p>
+      <section id="infoSection">
+        <div class="container-fluid" id="backgroundImg">
+        </div>
+        <div class="container-fluid" id="about-me">
+          <div class="col-3 text-center">
+            <h1 id="about-h1" class="mb-4">About Me</h1>
+            <img
+              src="./assets/images/sarah.jpeg"
+              alt="a picture of me"
+              class="sarah-img"
+            />
+          </div>
+          <div class="col-8">
+            <p id="info-text">
+              My name is Sarah Thevenot and I am currently enrolled in
+              University of Denver's Coding Bootcamp. I graduated high school in
+              2020 and am recently unemployed trying to pursue my education and
+              start a career as a web developer. I really enjoy building and
+              designing websites and can't wait to keep learning and growing
+              throughout this course. I previously was an employee at Jersey
+              Mike's subs and worked my way up to assistant manager before I
+              turned 19. I look forward to starting my career and making the
+              most of my life!
+            </p>
+          </div>
         </div>
       </section>
       <section id="education">
@@ -56,40 +68,102 @@
           <br />
           <dt>Lincoln Land Community College</dt>
           <dd>2018-2021</dd>
+          <br>
+          <dt>University of Denver Coding Bootcamp</dt>
+          <dd>July 2022-present</dd>
         </dl>
       </section>
       <section id="my-work">
         <h1>My Projects</h1>
-        <div class="project1">
-          <a href="https://sthevenot.github.io/fanpage/" target="_blank">
-            <img src="./assets/images/skz-site.png" alt=""
-          /></a>
-          <p>Landing Page Website</p>
+        <div id="page1">
+          <div class="project5">
+            <a href="https://relero90.github.io/brewfinder/" target="_blank">
+              <img src="./assets/images/brewfinder.png" alt=""
+            /></a>
+            <p>Brewfinder Group Project</p>
+          </div>
+          <div class="project1">
+            <a href="https://sthevenot.github.io/fanpage/" target="_blank">
+              <img src="./assets/images/skz-site.png" alt=""
+            /></a>
+            <p>Landing Page Website</p>
+          </div>
+          <div class="project2">
+            <a
+              href="https://sthevenot.github.io/module-1-challenge/"
+              target="_blank"
+            >
+              <img src="./assets/images/horiseon.png" alt=""
+            /></a>
+            <p>Horiseon Module 1 Challenge</p>
+          </div>
+          <div class="project3">
+            <a
+              href="https://sthevenot.github.io/css-cheat-sheet/"
+              target="_blank"
+            >
+              <img src="./assets/images/css-cheat-sheet.png" alt=""
+            /></a>
+            <p>CSS Cheat Sheet Mini Project</p>
+          </div>
+          <div class="project4">
+            <a
+              href="https://sthevenot.github.io/landing-page1/"
+              target="_blank"
+            >
+              <img src="./assets/images/landing-page.png" alt=""
+            /></a>
+            <p>Favorite Musician Pre-work</p>
+          </div>
         </div>
-        <div class="project2">
-          <a
-            href="https://sthevenot.github.io/module-1-challenge/"
-            target="_blank"
-          >
-            <img src="./assets/images/horiseon.png" alt=""
-          /></a>
-          <p>Horiseon Module 1 Challenge</p>
+        <div id="page2">
+          <div class="project6">
+            <a
+              href="https://sthevenot.github.io/random-password/"
+              target="_blank"
+            >
+              <img src="./assets/images/screenshot-2.png" alt=""
+            /></a>
+            <p>Random Password Generator</p>
+          </div>
+          <div class="project7">
+            <a href="https://sthevenot.github.io/module4/" target="_blank">
+              <img src="./assets/images/Screenshot (23).png" alt=""
+            /></a>
+            <p>Timed Quiz</p>
+          </div>
+          <div class="project8">
+            <a
+              href="https://sthevenot.github.io/work-scheduler/"
+              target="_blank"
+            >
+              <img src="./assets/images/Screenshot (27).png" alt=""
+            /></a>
+            <p>Work Day Scheduler</p>
+          </div>
+          <div class="project9">
+            <a href="https://sthevenot.github.io/weatherAPI/" target="_blank">
+              <img src="./assets/images/ss2-mod6.png" alt=""
+            /></a>
+            <p>Weather API</p>
+          </div>
         </div>
-        <div class="project3">
-          <a
-            href="https://sthevenot.github.io/css-cheat-sheet/"
-            target="_blank"
-          >
-            <img src="./assets/images/css-cheat-sheet.png" alt=""
-          /></a>
-          <p>CSS Cheat Sheet Mini Project</p>
-        </div>
-        <div class="project4">
-          <a href="https://sthevenot.github.io/landing-page1/" target="_blank">
-            <img src="./assets/images/landing-page.png" alt=""
-          /></a>
-          <p>Favorite Musician Pre-work</p>
-        </div>
+        <nav aria-label="Page navigation example" id="page-nav">
+          <ul class="pagination justify-content-center">
+            <li class="page-item">
+              <a class="page-link" href="#" id="prevBtn">Previous</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#my-work" id="oneBtn">1</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#my-work" id="twoBtn">2</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#" id="nextBtn">Next</a>
+            </li>
+          </ul>
+        </nav>
       </section>
       <section id="form-section">
         <form action="mailto:sktmh007@gmail.com" method="post">
@@ -144,5 +218,11 @@
         </div>
       </footer>
     </main>
+    <script src="./assets/js/script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

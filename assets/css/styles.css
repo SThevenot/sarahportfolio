@@ -2,6 +2,7 @@
 
 * {
   max-width: 100%;
+  border: 1px solid red;
   scroll-behavior: smooth;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
@@ -16,7 +17,7 @@ body {
 
 header {
   display: flex;
-  background-color: #798777;
+  background-color: #464F41;
   height: 100px;
   position: sticky;
   width: 100%;
@@ -24,8 +25,12 @@ header {
   z-index: 1;
 }
 
+#title a{
+  text-decoration: none;
+  color: #f8ede3;
+}
+
 header h1 {
-  color: #a2b29f;
   padding-left: 30px;
   width: 300px;
 }
@@ -49,7 +54,7 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: #a2b29f;
+  color: #BFCBA8;
 }
 
 nav ul li a:hover {
@@ -58,34 +63,37 @@ nav ul li a:hover {
 
 /* about me section */
 
-#about-me {
-  padding: 250px 100px 100px 250px;
-  align-items: center;
-  height: 400px;
-  display: flex;
-  flex-direction: row;
+#backgroundImg {
+  background-image: url("../images/trees.jpg") ;
+  height: 800px;
 }
 
-.about-h1 {
+
+#about-me {
+  align-items: center;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  background-color: #798777;
+}
+
+#about-h1 {
   position: relative;
-  bottom: 300px;
-  right: 100px;
-  color: #99a799;
+  color: #BFCBA8;
+  padding-left: 50px;
 }
 
 .sarah-img {
   border-radius: 30%;
-  border: 2px solid #798777;
+  border: 2px solid #464F41;
   width: 240px;
-  height: 448px;
-  margin-bottom: 160px;
+  height: 302px;
+  margin-bottom: 50px;
 }
 
-.info-div {
-  margin-top: -250px;
-  padding-left: 30px;
+#info-text {
   font-size: larger;
-  color: #798777;
+  color: #f8ede3;
 }
 
 /* education section */
@@ -93,8 +101,12 @@ nav ul li a:hover {
 #education {
   padding: 50px 0;
   color: #f8ede3;
-  background-color: #99a799;
+  background-color: #A2B29F;
   width: 100%;
+}
+
+#education h1 {
+  color: #BFCBA8;
 }
 
 #education dl {
@@ -118,30 +130,26 @@ nav ul li a:hover {
 }
 
 /* project images */
-
-#my-work img {
-  border: 2px solid #a2b29f;
-}
-
-.project1 img {
+.project5 img,
+.project6 img{
   width: 600px;
 }
 
-.project2 img,
-.project3 img,
-.project4 img {
+#page2 {
+  display: none;
+}
+
+#my-work img {
+  border: 2px solid #a2b29f;
   width: 400px;
 }
 
 /* divs */
 
-.project1 {
-  margin-left: -400px;
-}
-
-.project2,
-.project4 {
-  margin-right: -400px;
+.page-link {
+  border: 2px solid #a2b29f;
+  color: #d0c9c0;
+  background-color: #798777;
 }
 
 /* p elements */
@@ -238,17 +246,6 @@ button {
 
 /* media query */
 @media screen and (max-width: 768px) {
-  }
-  #about-me {
-    padding: 240px 0 200px 100px;
-  }
-  .about-h1 {
-    position: relative;
-    right: 50px;
-  }
-  .info-div {
-    margin-top: -120px;
-  }
 
   #my-work img {
     width: 50%;
@@ -256,33 +253,23 @@ button {
   .project1,
   .project2,
   .project3,
-  .project4 {
+  .project4,
+  .project5 {
     text-align: center;
     display: contents;
   }
+  #infoSection {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
 
 @media screen and (max-width: 576px) {
-
-header h1 {
-  width: 150px;
-}
-.sarah-img {
-  width: 70%;
-  height: 70%;
-  position: relative;
-  right: 100px;
-}
-.info-div {
-  width: 600px;
-  padding-left: 0;
-}
-#about-me {
-  padding: 130px 0 70px 40px;
-}
-.about-h1 {
-  padding-left: 0;
-  left: 3px;
-  bottom: 260px;
+#info-Section {
+  display: flex;
+  align-items: center;
+  position: absolute;
 }
 
 }
