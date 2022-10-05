@@ -2,7 +2,7 @@
 
 * {
   max-width: 100%;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   scroll-behavior: smooth;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
@@ -32,7 +32,7 @@ header {
 
 header h1 {
   padding-left: 30px;
-  width: 300px;
+  width: 500px;
 }
 
 nav {
@@ -75,19 +75,19 @@ nav ul li a:hover {
   display: flex;
   flex-direction: column;
   background-color: #798777;
+  max-width: 80%;
 }
 
 #about-h1 {
   position: relative;
   color: #BFCBA8;
-  padding-left: 50px;
+  margin-top: 10px;
 }
 
 .sarah-img {
   border-radius: 30%;
   border: 2px solid #464F41;
-  width: 240px;
-  height: 302px;
+  width: 50%;
   margin-bottom: 50px;
 }
 
@@ -102,7 +102,13 @@ nav ul li a:hover {
   padding: 50px 0;
   color: #f8ede3;
   background-color: #A2B29F;
-  width: 100%;
+  max-width: 80%;
+}
+
+#edDiv {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
 #education h1 {
@@ -111,6 +117,7 @@ nav ul li a:hover {
 
 #education dl {
   margin-left: 20px;
+  font-size: larger;
 }
 
 /* my projects */
@@ -166,7 +173,7 @@ nav ul li a:hover {
 
 input[type="text"],
 select {
-  width: 60%;
+  width: 70%;
   display: inline-block;
   box-sizing: border-box;
   border-radius: 3px;
@@ -187,7 +194,7 @@ form {
   margin: 30px 600px;
   padding: 10px;
   background-color: #798777;
-  width: 300px;
+  width: 500px;
   align-items: center;
   border-radius: 4px;
 }
@@ -200,7 +207,7 @@ label {
 #fname,
 #lname,
 #message {
-  width: 150px;
+  width: 250px;
   border: 2px solid #99a799;
   border-radius: 3px;
 }
@@ -242,6 +249,10 @@ button {
   margin: 30px 70px;
   font-size: 30px;
   cursor: pointer;
+}
+
+i:hover {
+  color: #f8ede3;
 }
 
 /* media query */
