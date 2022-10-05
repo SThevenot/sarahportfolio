@@ -6,6 +6,7 @@
 <img src="https://img.shields.io/badge/license-CSS-purple"/>
 <img src="https://img.shields.io/badge/license-JavaScript-yellow"/>
 </p>
+
 ## Description⭐
 
 #### A personal portfolio to show future employers that showcases info about me, projects I've worked on, and some social links to my profiles.
